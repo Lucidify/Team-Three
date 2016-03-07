@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour {
     
     //public GameObject LoadUI;
 
-    private bool paused = false;
+    public bool paused = false;
 
     
 
@@ -42,11 +42,8 @@ public class PauseMenu : MonoBehaviour {
 
     public void Save()
     {
-        /*savedStats.Add(PlayerPathStats.current);
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/savedStats.gd");
-        bf.Serialize(file, PauseMenu.savedStats);
-        file.Close();*/
+        menu[0].SetActive(false);
+        menu[2].SetActive(true);
     }
 
     public void Load()
@@ -66,6 +63,8 @@ public class PauseMenu : MonoBehaviour {
         if (!paused)
         {
             menu[0].SetActive(false);
+            menu[1].SetActive(false);
+            menu[2].SetActive(false);
             Time.timeScale = 1;
         }
     }

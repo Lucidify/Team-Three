@@ -94,6 +94,8 @@
     <Compile Include="Assets\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Player\PlayerStats.cs" />
     <Compile Include="Assets\Player\TownCamera.cs" />
+    <Compile Include="Assets\SaveManager.cs" />
+    <Compile Include="Assets\SaveUI.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\ImportBehaviour.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />
